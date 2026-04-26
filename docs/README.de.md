@@ -1,4 +1,4 @@
-# mem-forever
+# Ewiger Speicher
 
 **Jedes KI-Tool vergisst dich. Forke dieses Repo und sie werden es nie wieder tun.**
 

@@ -1,4 +1,4 @@
-# mem-forever
+# Mémoire Éternelle
 
 **Tous les outils d'IA vous oublient. Forkez ce repo et ils ne le feront plus jamais.**
 
