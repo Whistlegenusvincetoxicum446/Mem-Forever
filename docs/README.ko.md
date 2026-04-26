@@ -1,29 +1,46 @@
 # 영원한 기억
 
-**모든 AI 도구는 당신을 잊는다. 이 저장소를 포크하면 다시는 잊지 않는다.**
+> **Mem-Forever · 세션 횡단 · 모델 횡단 · 도구 횡단**
+> I-Lang 프로토콜로 구축된 AI 영구 기억 레이어.
+
+[![License](https://img.shields.io/badge/license-MIT-d4a858?style=flat-square)](../LICENSE)
+[![Protocol](https://img.shields.io/badge/protocol-I--Lang_v3.0-d4a858?style=flat-square)](https://ilang.ai)
 
 [English](../README.md) | [中文](README.zh.md) | [日本語](README.ja.md) | [Español](README.es.md) | [Français](README.fr.md) | [Deutsch](README.de.md) | [Português](README.pt.md) | [Русский](README.ru.md)
 
 ---
 
-대화를 닫으면 논의한 모든 것이 사라진다. 다음 세션에서는 처음부터 시작. 자신이 누구인지 다시 설명. 이미 수정한 실수를 AI가 반복하는 것을 지켜봐야 한다.
+## 개요
 
-이 저장소가 해결한다. AI가 당신이 누구인지, 어떤 결정을 내렸는지, 무엇을 배웠는지, 무엇을 싫어하는지 기억한다. 모든 도구에서. 모든 세션에서. 영원히.
+모든 AI 도구는 세션이 끝나면 당신을 잊는다. **Mem-Forever**는 Git 기반 기억 레이어로, 모든 AI 도구가 당신을 영구적으로 기억하게 한다.
+
+컨텍스트 윈도우는 잊는다. **Mem-Forever는 잊지 않는다**.
+
+---
+
+## 왜
+
+| | |
+|---|---|
+| **영구** | 하나의 기억이 모든 세션과 모델 전환을 넘어 존속. |
+| **휴대** | `.ilang/`의 일반 텍스트. `git diff` 추적 가능. 벤더 종속 없음. |
+| **자동** | AI가 대화에서 프로필을 자동 구축. 양식 작성 불필요. |
+| **비공개** | 당신의 저장소, 당신의 데이터. 서버 없음, 계정 없음. |
+
+---
 
 ## 설정 (몇 초)
 
-**1단계**: **"Use this template"** → **Create a new repository** → **Private** 설정
+**1단계** &ensp; **"Use this template"** → **Create a new repository** → **Private** 설정.
 
-**2단계**: 2단계는 없다.
+**2단계** &ensp; 2단계는 없다.
 
-아무 AI 도구로 이 저장소를 열면 된다. 지시 파일을 읽고, 몇 가지 질문을 하고, 프로필 구축을 시작한다.
-
-## 다른 프로젝트에서 작업 중?
-
-AI 도구에 말하면 된다:
-
-> 내 메모리 저장소는 `https://github.com/YOUR_USERNAME/mem-forever`에 있어. PAT: `ghp_xxx`. 클론해서 `.ilang/soul.md`와 `.ilang/memory.md`를 읽고 이 프로젝트로 돌아와.
+---
 
 ## 라이선스
 
-MIT | [I-Lang Protocol](https://ilang.ai)
+MIT
+
+---
+
+<sub><a href="https://ilang.ai">I-Lang Protocol</a> · 인공지능의 네이티브 언어</sub>

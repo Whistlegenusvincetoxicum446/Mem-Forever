@@ -1,106 +1,119 @@
 # 永久记忆
 
-**所有AI工具都会忘记你。用这个仓库，它们再也不会。**
+> **Mem-Forever · 跨会话 · 跨模型 · 跨工具**
+> 基于 I-Lang 协议构建的 AI 持久记忆层。
+
+[![License](https://img.shields.io/badge/license-MIT-d4a858?style=flat-square)](../LICENSE)
+[![Protocol](https://img.shields.io/badge/protocol-I--Lang_v3.0-d4a858?style=flat-square)](https://ilang.ai)
+[![Tools](https://img.shields.io/badge/works_with-Claude_·_Cursor_·_Codex_·_Copilot_·_Gemini-d4a858?style=flat-square)]()
 
 [English](../README.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español](README.es.md) | [Français](README.fr.md) | [Deutsch](README.de.md) | [Português](README.pt.md) | [Русский](README.ru.md)
 
 ---
 
-你关掉对话。刚才讨论的一切都消失了。下次打开，从零开始。重新解释你是谁。重新说明你的偏好。看着AI犯你已经纠正过的错误。
+## 摘要
 
-这个仓库就是解决方案。你的AI会记住你是谁、你做了什么决定、你学到了什么、你讨厌什么。跨工具。跨会话。永远。
+所有AI工具都会在会话结束后忘记你。你关掉窗口，偏好、决策、教训全部消失。下次打开，从零开始。
 
-## 原理
+**Mem-Forever** 是一个基于Git的记忆层，让任何AI工具永久记住你。记忆以 I-Lang 结构化格式存储在你自己的私有仓库中。人类可读，机器可解析，跨工具通用。
+
+上下文窗口会遗忘，**Mem-Forever 不会**。
+
+---
+
+## 为什么
+
+| | |
+|---|---|
+| **持久** | 一份记忆，跨越每次会话、每次模型切换。 |
+| **便携** | `.ilang/` 目录里的纯文本，`git diff` 可追踪，零厂商锁定。 |
+| **自动** | AI从对话中自动建立你的画像，你不需要填任何表格。 |
+| **私密** | 你的仓库，你的数据。没有服务器，没有账号，没有遥测。 |
+
+---
+
+## 速览
 
 ```
 .ilang/
-  soul.md      ← 你是谁（AI自动生成，不是你填的）
-  memory.md    ← 你做了什么决定、学了什么、建了什么（AI自动追加）
+  soul.md      ← 你是谁（从对话中自动生成）
+  memory.md    ← 你做了什么决定、学了什么（自动追加）
 ```
 
-你的AI在每次会话开始时读取这些文件，结束时更新它们，然后commit并push。下次会话、换个工具、下个月、明年：完整上下文，零重复。
+```ilang
+::DNA{user}
+::CORE{
+  ::CONTEXT{role:全栈开发|experience:10yr}
+  ::GENE{style|conf:confirmed}
+    T:先说结论
+    T:简洁输出|when:简单任务
+    A:无信号的冗长⇒浪费
+}
+::LESSONS{
+  ::LESSON{id:serverless不能共享状态|conf:confirmed}
+}
+```
+
+每一条偏好都是**可寻址的**、**有作用域的**、**有版本的**、**可证伪的**。
+
+---
 
 ## 设置（几秒钟）
 
-**第一步**：点击 **"Use this template"** → **Create a new repository** → 设为 **Private**。
+**第一步** &ensp; 点击 **"Use this template"** → **Create a new repository** → 设为 **Private**。
 
-**第二步**：没有第二步。
+**第二步** &ensp; 没有第二步。
 
-用任何AI工具打开这个仓库。它会读取指令文件，问你几个问题，然后开始建立你的档案。从那以后，它就记住你了。
+用任何AI工具打开这个仓库。它会读取指令文件，问你几个问题，建立你的画像。从此，它记住你。
 
-## 配合任何AI工具使用
+---
 
-### Claude Code / Codex / Cursor / Copilot / Gemini CLI
+## 适配所有工具
 
-用你的工具打开这个仓库。指令文件已经就位：
-
-| 工具 | 自动读取 |
-|---|---|
-| Claude Code | `CLAUDE.md` |
-| Codex | `AGENTS.md` |
-| Cursor | `.cursorrules` |
-| Copilot | `.github/copilot-instructions.md` |
-| Gemini CLI | `GEMINI.md` |
+| 工具 | 自动读取 | 方式 |
+|---|---|---|
+| Claude Code | `CLAUDE.md` | 打开仓库，直接工作 |
+| Cursor | `.cursorrules` | 打开仓库，直接工作 |
+| Codex | `AGENTS.md` | 打开仓库，直接工作 |
+| Copilot | `.github/copilot-instructions.md` | 打开仓库，直接工作 |
+| Gemini CLI | `GEMINI.md` | 打开仓库，直接工作 |
+| ChatGPT | 项目知识 | 上传 `soul.md` |
+| Claude.ai | 项目知识 | 上传 `soul.md` |
+| Gemini网页版 | Google云端硬盘 | 同步 `soul.md` 到云端硬盘 |
 
 ### 在其他项目里工作？
 
-告诉你的AI：
+一句话恢复完整上下文：
 
-> 我的记忆仓库在 `https://github.com/你的用户名/mem-forever`。PAT: `ghp_xxx`。去clone它，读 `.ilang/soul.md` 和 `.ilang/memory.md`，然后回来继续这个项目。
+> *我的记忆仓库在 `https://github.com/你的用户名/mem-forever`。PAT: `ghp_xxx`。去clone它，读 `.ilang/soul.md` 和 `.ilang/memory.md`，然后回来继续这个项目。*
 
-就这样。一句话。完整上下文恢复。
+### 多个项目？
 
-### ChatGPT / Claude.ai / Gemini网页版
+再用一次模板。`mem-forever-work`、`mem-forever-research`、`mem-forever-client-x`。每个仓库是独立的记忆。同一个引擎，不同的上下文。
 
-把 `.ilang/soul.md` 上传到：
-
-| 平台 | 上传到哪里 |
-|---|---|
-| ChatGPT | 项目知识文件 |
-| Claude.ai | 项目知识 |
-| Gemini | Google云端硬盘 → Gemini自动读取 |
-
-记忆更新后重新上传。或者直接把内容贴在对话开头。
-
-## 记住什么
-
-你的AI自动生成并维护两个文件：
-
-**soul.md** 是你的画像。从对话中建立，不是填表。包含你的角色、工作方式、偏好、反模式和教训。每次会话通过突变和衰减规则变得更精准。
-
-**memory.md** 是你的日志。做过的决定、学到的教训、发现的事实、追踪的进展。只追加不覆盖。Git历史保留一切。
-
-你永远不需要手写这些文件。你的AI来写。你随时可以查看和编辑。它们是你私有仓库里的纯文本。归你所有。
-
-## 多个项目？
-
-再用一次模板。创建 `mem-forever-work`、`mem-forever-side-project`、`mem-forever-research`。每个仓库是独立的记忆。同一个引擎，不同的上下文。
-
-## 上游更新
-
-新功能和改进每周一通过GitHub Action自动同步。只更新引擎文件。你的 `.ilang/` 数据永远不会被碰。
-
-## 隐私
-
-你的记忆存储在你自己的私有GitHub仓库中。没有服务器。没有账号。没有数据离开你的仓库。删掉仓库就没了。
+---
 
 ## 对比
 
-| | mem-forever | Nowledge Mem | Mem0 |
+| | Mem-Forever | Nowledge Mem | Mem0 |
 |---|---|---|---|
 | 安装 | 用模板 | 下载应用+配置 | pip install+API key |
-| 配置 | 无 | MCP+插件+LLM设置 | SDK集成 |
+| 配置 | 无 | MCP+插件+LLM | SDK集成 |
 | 存储 | 你的GitHub仓库 | 本地SQLite | 云端向量库 |
 | 跨工具 | 任何能读文件的工具 | 每个工具装插件 | 每个工具接API |
-| 价格 | 免费 | 免费/付费 | 免费/付费 |
+| 价格 | 永久免费 | 免费/付费 | 免费/付费 |
 | 数据归属 | 你 | 你 | 他们 |
 | 迁移 | `git clone` | 导出 | API调用 |
 
+---
+
 ## 底层原理
 
-指令文件（`CLAUDE.md`、`.cursorrules`、`AGENTS.md`、`GEMINI.md`）包含用 [I-Lang v3.0](https://ilang.ai) 编写的行为规则，这是一种AI模型能原生解析的结构化协议。这些规则告诉AI如何提取偏好、格式化记忆、处理冲突、随时间演进你的画像。
+指令文件包含用 [I-Lang v3.0](https://ilang.ai) 编写的行为规则，AI模型能原生解析。它们告诉AI如何提取偏好、格式化记忆、处理冲突、随时间演进你的画像。
 
-你不需要了解I-Lang。你不需要读指令文件。你只管和AI对话，它会越来越懂你。
+你不需要了解I-Lang。你只管和AI对话，它会越来越懂你。
+
+---
 
 ## 许可证
 
@@ -108,4 +121,4 @@ MIT
 
 ---
 
-由 [I-Lang Protocol](https://ilang.ai) 构建。人工智能的原生语言。
+<sub>由 <a href="https://ilang.ai">I-Lang Protocol</a> 构建 · 人工智能的原生语言</sub>

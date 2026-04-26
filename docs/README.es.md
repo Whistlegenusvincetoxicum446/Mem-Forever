@@ -1,25 +1,42 @@
 # Memoria Eterna
 
-**Todas las herramientas de IA te olvidan. Haz fork de este repo y nunca lo harán de nuevo.**
+> **Mem-Forever · Entre sesiones · Entre modelos · Entre herramientas**
+> Capa de memoria persistente para agentes AI, construida sobre el protocolo I-Lang.
+
+[![License](https://img.shields.io/badge/license-MIT-d4a858?style=flat-square)](../LICENSE)
+[![Protocol](https://img.shields.io/badge/protocol-I--Lang_v3.0-d4a858?style=flat-square)](https://ilang.ai)
 
 [English](../README.md) | [中文](README.zh.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Français](README.fr.md) | [Deutsch](README.de.md) | [Português](README.pt.md) | [Русский](README.ru.md)
 
 ---
 
-Cierras una conversación. Todo lo que discutiste desaparece. La próxima sesión, empiezas de cero. Este repo lo soluciona. Tu IA recuerda quién eres, qué decidiste, qué aprendiste y qué odias. En todas las herramientas. En todas las sesiones. Para siempre.
+## Resumen
+
+Todas las herramientas de IA te olvidan al cerrar la sesión. **Mem-Forever** es una capa de memoria basada en Git que permite a cualquier herramienta de IA recordarte permanentemente.
+
+Donde las ventanas de contexto olvidan, **Mem-Forever perdura**.
+
+| | |
+|---|---|
+| **Persistente** | Una memoria que sobrevive cada sesión y cada cambio de modelo. |
+| **Portable** | Texto plano en `.ilang/`. Rastreable con `git diff`. Sin dependencia de proveedor. |
+| **Automático** | La IA construye tu perfil desde la conversación. Sin formularios. |
+| **Privado** | Tu repositorio, tus datos. Sin servidor, sin cuenta, sin telemetría. |
+
+---
 
 ## Configuración (segundos)
 
-**Paso 1**: Haz clic en **"Use this template"** → **Create a new repository** → Configura como **Private**.
+**Paso 1** &ensp; Clic en **"Use this template"** → **Private**.
 
-**Paso 2**: No hay paso 2.
+**Paso 2** &ensp; No hay paso 2.
 
-Abre el repo con cualquier herramienta de IA. Lee las instrucciones, te hace algunas preguntas y comienza a construir tu perfil.
-
-## ¿Trabajando en otro proyecto?
-
-> Mi repositorio de memoria está en `https://github.com/TU_USUARIO/mem-forever`. PAT: `ghp_xxx`. Clónalo, lee `.ilang/soul.md` y `.ilang/memory.md`, luego vuelve a este proyecto.
+---
 
 ## Licencia
 
-MIT | [I-Lang Protocol](https://ilang.ai)
+MIT
+
+---
+
+<sub><a href="https://ilang.ai">I-Lang Protocol</a> · El lenguaje nativo de la inteligencia artificial</sub>
