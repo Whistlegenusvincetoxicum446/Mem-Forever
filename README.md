@@ -26,6 +26,7 @@ pretty_name: Mem-Forever
 
 [![License](https://img.shields.io/badge/license-MIT-d4a858?style=flat-square)](LICENSE)
 [![Protocol](https://img.shields.io/badge/protocol-I--Lang_v3.0-d4a858?style=flat-square)](https://ilang.ai)
+[![I-Lang L2](https://img.shields.io/badge/I--Lang-L2_Compatible-d4a858?style=flat-square)](https://github.com/ilang-ai/ilang-spec)
 [![Tools](https://img.shields.io/badge/works_with-Claude_·_Cursor_·_Codex_·_Copilot_·_Gemini-d4a858?style=flat-square)]()
 
 [中文](docs/README.zh.md) | [日本語](docs/README.ja.md) | [한국어](docs/README.ko.md) | [Español](docs/README.es.md) | [Français](docs/README.fr.md) | [Deutsch](docs/README.de.md) | [Português](docs/README.pt.md) | [Русский](docs/README.ru.md)
